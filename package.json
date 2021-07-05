@@ -1,0 +1,45 @@
+{
+  "name": "arvis-rxjs",
+  "version": "0.0.1",
+  "description": "Search through the RxJS documentation",
+  "license": "MIT",
+  "repository": "SamVerschueren/arvis-rxjs",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "icon.png",
+    "info.plist",
+    "icons"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "rxjs",
+    "observable",
+    "observables",
+    "reactive",
+    "documentation",
+    "productivity"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6"
+  },
+  "devDependencies": {
+    "arvish-test": ">=0.1.0",
+    "ava": "*",
+    "xo": "*"
+  }
+}

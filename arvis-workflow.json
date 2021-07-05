@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "",
+  "name": "rxjs",
+  "creator": "Sam Verschueren",
+  "description": "Search through the RxJS documentation",
+  "defaultIcon": "icon.png",
+  "version": "0.0.1",
+  "webAddress": "https://github.com/jopemachine/arvis-rxjs",
+  "readme": "",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "rxjs",
+      "title": "Search through the RxJS documentation",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Searching...",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "cond",
+          "if": {
+            "cond": "new RegExp(\"^http\").test({query})",
+            "actions": {
+              "then": [
+                {
+                  "modifiers": "normal",
+                  "type": "open",
+                  "target": "{query}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "modifiers": "normal",
+          "type": "cond",
+          "if": {
+            "cond": "new RegExp(\"^import\").test({query})",
+            "actions": {
+              "then": [
+                {
+                  "modifiers": "normal",
+                  "type": "clipboard",
+                  "text": "{query}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
