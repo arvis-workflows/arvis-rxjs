@@ -5,7 +5,7 @@
   "creator": "Sam Verschueren",
   "description": "Search through the RxJS documentation",
   "defaultIcon": "icon.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "webAddress": "https://github.com/jopemachine/arvis-rxjs",
   "readme": "",
   "enabled": true,
@@ -24,7 +24,7 @@
           "modifiers": "normal",
           "type": "cond",
           "if": {
-            "cond": "new RegExp(\"^http\").test({query})",
+            "cond": "new RegExp(\"^http\").test('{query}')",
             "actions": {
               "then": [
                 {
@@ -40,7 +40,7 @@
           "modifiers": "normal",
           "type": "cond",
           "if": {
-            "cond": "new RegExp(\"^import\").test({query})",
+            "cond": "new RegExp(\"^import\").test('{query}')",
             "actions": {
               "then": [
                 {

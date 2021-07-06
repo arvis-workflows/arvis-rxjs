@@ -1,6 +1,6 @@
 {
   "name": "arvis-rxjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Search through the RxJS documentation",
   "license": "MIT",
   "repository": "SamVerschueren/arvis-rxjs",
@@ -21,7 +21,7 @@
     "index.js",
     "lib",
     "icon.png",
-    "info.plist",
+    "arvis-workflow.json",
     "icons"
   ],
   "keywords": [
