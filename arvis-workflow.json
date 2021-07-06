@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
   "category": "",
-  "name": "rxjs",
+  "name": "arvis-rxjs-workflow",
   "creator": "Sam Verschueren",
   "description": "Search through the RxJS documentation",
   "defaultIcon": "icon.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "webAddress": "https://github.com/jopemachine/arvis-rxjs",
   "readme": "",
   "enabled": true,

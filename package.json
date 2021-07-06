@@ -1,6 +1,6 @@
 {
-  "name": "arvis-rxjs",
-  "version": "0.0.2",
+  "name": "arvis-rxjs-workflow",
+  "version": "0.0.3",
   "description": "Search through the RxJS documentation",
   "license": "MIT",
   "repository": "SamVerschueren/arvis-rxjs",
